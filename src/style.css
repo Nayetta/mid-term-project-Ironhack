@@ -5,7 +5,58 @@
 body {
   max-width: 1320px;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size:50px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size:50px;
+    font-weight: 700;
+}
+
+.body-intro-med {
+    font-size: 24px;
+    font-weight:500;
+}
+
+.body-intro-reg {
+    font-size: 20px;
+    font-weight:400;
+}
+
+.headline-reg {
+    font-size: 17px;
+    font-weight:400;
+}
+
+.headline-med {
+    font-size: 17px;
+    font-weight:500;
+}
+
+.caption1-reg {
+    font-size: 15px;
+    font-weight:400
+}
+
+.caption2-reg {
+    font-size: 13px;
+    font-weight:400;
+}
+
+/* RECENT PROJECTS */
+.card {
+    background-color: white;
+    
 
 /* SECTION 1 HEADER STYLES */
 .text-left {
