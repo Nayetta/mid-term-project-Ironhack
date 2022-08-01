@@ -58,4 +58,24 @@ h3 {
     background-color: white;
     
 
+/* SECTION 1 HEADER STYLES */
+.text-left {
+  width: 45%;
+}
+.container-float-cards {
+  position: relative;
+}
+.float-cards {
+  position: absolute;
+}
+#card1 {
+}
+#card2 {
+}
+
+/* SECTION 2 BRANDS */
+.brands2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
