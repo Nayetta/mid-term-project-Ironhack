@@ -1,76 +1,112 @@
-* {
+body {
+  font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
 }
 
-body {
-  max-width: 1320px;
+.small-section {
+  max-width: 1100px;
+  width: 100%;
   margin: auto;
-  font-family: 'Roboto', sans-serif;
+}
+
+.large-section {
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 700;
+  font-size: 60px;
+  font-weight: 700;
+  color: #292e47;
 }
 
 h2 {
-    font-size:50px;
-    font-weight: 700;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 h3 {
-    font-size:50px;
-    font-weight: 700;
+  font-size: 50px;
+  font-weight: 700;
 }
 
+/* TEXT STYLES  */
 .body-intro-med {
-    font-size: 24px;
-    font-weight:500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .body-intro-reg {
-    font-size: 20px;
-    font-weight:400;
+  font-size: 20px;
+  font-weight: 400;
+  color: #6b708d;
 }
 
 .headline-reg {
-    font-size: 17px;
-    font-weight:400;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .headline-med {
-    font-size: 17px;
-    font-weight:500;
+  font-size: 17px;
+  font-weight: 500;
+  color: #6b708d;
 }
 
 .caption1-reg {
-    font-size: 15px;
-    font-weight:400
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .caption2-reg {
-    font-size: 13px;
-    font-weight:400;
+  font-size: 13px;
+  font-weight: 400;
 }
 
-/* RECENT PROJECTS */
-.card {
-    background-color: white;
-    
-
 /* SECTION 1 HEADER STYLES */
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .text-left {
-  width: 45%;
+  max-width: 530px;
+}
+.text-left p {
+  width: 435px;
+}
+
+.both-buttons {
+  text-decoration: none;
+  margin-top: 4rem;
+}
+.blue-button {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  background-color: #072ac8;
+  margin-left: 1.5rem;
+}
+.images-right {
+  max-width: 530px;
+}
+.img-man {
+  width: 560px;
 }
 .container-float-cards {
   position: relative;
 }
 .float-cards {
   position: absolute;
+  width: 18rem;
 }
 #card1 {
+  top: -1rem;
+  left: -4rem;
 }
 #card2 {
+  right: -8rem;
+  bottom: -8rem;
 }
 
 /* SECTION 2 BRANDS */
@@ -78,4 +114,40 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.brand-logos {
+  filter: grayscale(1);
+}
+
+.brand-logos:hover {
+  filter: grayscale(0);
+  transition: all 400ms ease;
+}
+
+/* SECTION 3 RECENT PROJECTS */
+.card {
+  background-color: white;
+}
+
+/* SECTION 6 SUBSCRIPTION FORM */
+
+.form6 {
+  background-color: #ffc600;
+  margin: auto;
+  height: 500px;
+}
+
+.form-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* FOOTER */
+.footer {
+  height: 150px;
 }
