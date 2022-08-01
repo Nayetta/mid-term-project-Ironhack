@@ -90,7 +90,7 @@ h3 {
 .images-right {
   max-width: 530px;
 }
-.images-right > img {
+.img-man {
   width: 560px;
 }
 .container-float-cards {
@@ -98,11 +98,16 @@ h3 {
 }
 .float-cards {
   position: absolute;
+  width: 18rem;
 }
-/* #card1 {
+#card1 {
+  top: -1rem;
+  left: -4rem;
 }
 #card2 {
-} */
+  right: -8rem;
+  bottom: -8rem;
+}
 
 /* SECTION 2 BRANDS */
 .brands2 {
@@ -111,6 +116,15 @@ h3 {
   justify-content: space-between;
   margin-top: 200px;
   margin-bottom: 200px;
+}
+
+.brand-logos {
+  filter: grayscale(1);
+}
+
+.brand-logos:hover {
+  filter: grayscale(0);
+  transition: all 400ms ease;
 }
 
 /* SECTION 3 RECENT PROJECTS */
