@@ -224,6 +224,7 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 #emoji1 {
@@ -325,7 +326,7 @@ h3 {
 .form6 {
   background-color: #ffc600;
   /* margin: auto; */
-  margin-top: 100px;
+  margin-top: 200px;
   height: 500px;
 }
 
@@ -404,8 +405,7 @@ h3 {
 
 /* MEDIA QUERIES MOVILE */
 
-
-@media all and (max-width: 767px) { 
+@media all and (max-width: 767px) {
   /* general */
   h3 {
     text-align: center;
@@ -446,6 +446,7 @@ h3 {
     display: none;
   }
   .img-man {
+    width: 85vw;
   }
 
   /* section 2 brands2 */
