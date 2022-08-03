@@ -103,7 +103,7 @@ h3 {
   max-width: 530px;
 }
 .text-left p {
-  width: 435px;
+  max-width: 435px;
 }
 
 .both-buttons {
@@ -159,6 +159,10 @@ h3 {
   transition: all 400ms ease;
 }
 
+.microsoft {
+  margin: 2.5rem;
+}
+
 /* SECTION 3 RECENT PROJECTS */
 
 .cards-container {
@@ -208,7 +212,7 @@ h3 {
 /* SECTION 4 CLIENTS */
 
 .clients4 {
-  background-color: #292E47;
+  background-color: #292e47;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,7 +263,7 @@ h3 {
 }
 
 .clients4 > p {
-  color: #FFC600;
+  color: #ffc600;
   width: 47vw;
   text-align: center;
 }
@@ -282,7 +286,7 @@ h3 {
 }
 
 .kristin-name {
-  color: #D1EDFF;
+  color: #d1edff;
   margin: 0px;
 }
 
@@ -290,8 +294,6 @@ h3 {
   color: white;
   margin: 1.5px;
 }
-
-
 
 /* SECTION 5 SERVICES */
 /* links & container styling are set in SECTION 4 */
@@ -354,11 +356,15 @@ h3 {
   left: 3.5rem;
   top: 0.6rem;
 }
-.form-line {
+.mail-line {
   height: 100%;
   width: 62%;
   border: none;
   padding-left: 4.5rem;
+}
+.form-line {
+  height: 100%;
+  width: 100%;
 }
 
 .boto-contact {
@@ -368,13 +374,13 @@ h3 {
   margin-left: 0;
 }
 
-
 /* FOOTER */
 .footer {
   height: 150px;
   margin-top: 12.5rem;
   margin-bottom: 5rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -393,6 +399,7 @@ h3 {
 }
 .footer-menu a {
   text-decoration: none;
+  color: #072ac8;
 }
 
 /* MEDIA QUERIES MOVILE */
@@ -402,6 +409,54 @@ h3 {
   /* general */
   h3 {
     text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  /* NAV */
+  .navegation {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  /* section 1 header */
+  .header1 {
+    flex-direction: column;
+  }
+  .text-left p {
+    text-align: center;
+    margin-right: 0;
+  }
+  .both-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .float-cards {
+    display: none;
+  }
+  .img-man {
+  }
+
+  /* section 2 brands2 */
+  .brand-logos {
+    margin: 2.5rem;
+  }
+  .microsoft {
+    margin: 2rem;
+  }
+  .amazon {
+    display: none;
   }
 
   /* section 3 RECENT PROJECTS */
@@ -425,7 +480,10 @@ h3 {
     width: 70vw;
   }
 
-  #emoji1, #emoji2, #emoji3, #emoji4 {
+  #emoji1,
+  #emoji2,
+  #emoji3,
+  #emoji4 {
     display: none;
   }
 
@@ -440,4 +498,40 @@ h3 {
     max-width: 30px;
   } */
 
+  /* SECTION 6 SUSCRIPTION */
+
+  .big-form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 9rem;
+    width: 75vw;
+  }
+  .form-line {
+    height: 100%;
+    width: 100%;
+  }
+  .mail-line {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .adress > p {
+    text-align: center;
+  }
 }
