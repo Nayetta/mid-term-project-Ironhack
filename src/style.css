@@ -358,13 +358,13 @@ h3 {
 }
 .mail-line {
   height: 100%;
-  width: 62%;
+  width: 50%;
   border: none;
   padding-left: 4.5rem;
 }
 .form-line {
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .boto-contact {
@@ -493,10 +493,6 @@ h3 {
     flex-direction: column;
     column-gap: 20px;
   }
-
-  /* .services-card p {
-    max-width: 30px;
-  } */
 
   /* SECTION 6 SUSCRIPTION */
 
