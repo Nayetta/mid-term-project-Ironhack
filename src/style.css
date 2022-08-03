@@ -5,7 +5,7 @@ body {
 
 .small-section {
   max-width: 1100px;
-  width: 100%;
+  width: 90vw;
   margin: auto;
 }
 
@@ -71,6 +71,28 @@ h3 {
   font-weight: 400;
 }
 
+/* NAV SECTION  */
+.navegation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.nav-menu {
+  /* max-width: 435px; */
+  /* background-color: #072ac8; */
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem;
+  grid-template-rows: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+.nav-menu a {
+  text-decoration: none;
+}
+
 /* SECTION 1 HEADER STYLES */
 .header1 {
   display: flex;
@@ -93,12 +115,13 @@ h3 {
   padding: 1rem 1.5rem;
   background-color: #072ac8;
   margin-left: 1.5rem;
+  text-decoration: none;
 }
 .images-right {
   max-width: 530px;
 }
 .img-man {
-  width: 560px;
+  width: 40vw;
 }
 .container-float-cards {
   position: relative;
@@ -121,11 +144,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 200px;
   margin-bottom: 200px;
 }
 
 .brand-logos {
+  margin: 3rem;
   filter: grayscale(1);
 }
 
@@ -303,6 +328,9 @@ h3 {
   flex-direction: column;
   height: 100%;
 }
+.form-inner > h3 {
+  margin-top: 0;
+}
 
 .form-inner > p {
   margin: 0;
@@ -334,9 +362,32 @@ h3 {
   margin-left: 0;
 }
 
+
+
 /* FOOTER */
 .footer {
   height: 150px;
+  margin-top: 12.5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.adress {
+  max-width: 260px;
+}
+.adress > img {
+  height: 2rem;
+}
+.footer-menu {
+  max-width: 435px;
+  /* background-color: #072ac8; */
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem;
+  grid-template-rows: 4rem 4rem;
+}
+.footer-menu a {
+  text-decoration: none;
 }
 
 /* MEDIA QUERIES MOVILE */
