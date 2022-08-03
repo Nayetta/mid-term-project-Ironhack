@@ -325,7 +325,6 @@ h3 {
 
 .form6 {
   background-color: #ffc600;
-  /* margin: auto; */
   margin-top: 200px;
   height: 500px;
 }
@@ -337,6 +336,7 @@ h3 {
   flex-direction: column;
   height: 100%;
 }
+
 .form-inner > h3 {
   margin-top: 0;
 }
@@ -347,31 +347,43 @@ h3 {
 
 .big-form {
   height: 4rem;
-  width: 40rem;
-  /* max-width: ; */
   margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  width: 75%;
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+}
+
+.form-container > span {
+  position: absolute;
 }
 
 .mail-icon {
-  position: relative;
-  left: 3.5rem;
-  top: 0.6rem;
-}
-.mail-line {
-  height: 100%;
-  width: 50%;
-  border: none;
-  padding-left: 4.5rem;
-}
-.form-line {
-  height: 100%;
-  /* width: 100%; */
+  padding-left: 1.5rem;
+  padding-top: 20px;
 }
 
-.boto-contact {
+.mail-line {
+  height: 100%;
+  width: 90%;
+  border: none;
+  padding-left: 4rem;
+}
+
+.button-submit {
   height: 100%;
   width: 20%;
-  border: none;
+  border: #072ac8 solid 1px;
   margin-left: 0;
 }
 
@@ -496,20 +508,25 @@ h3 {
   }
 
   /* SECTION 6 SUSCRIPTION */
-
+  .form6 {
+    height: 500px;
+  }
   .big-form {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    height: 9rem;
-    width: 75vw;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+    height: 150px;
   }
-  .form-line {
-    height: 100%;
-    width: 100%;
-  }
+
   .mail-line {
+    height: 4rem;
+  }
+
+  .button-submit {
     width: 100%;
+    height: 90px;
   }
 
   /* FOOTER */
