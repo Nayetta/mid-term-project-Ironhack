@@ -128,15 +128,16 @@ h3 {
 }
 .float-cards {
   position: absolute;
-  width: 18rem;
+  max-width: 18rem;
+  width: 20vw;
 }
 #card1 {
   top: -1rem;
   left: -4rem;
 }
 #card2 {
-  right: -8rem;
-  bottom: -8rem;
+  right: -7vw;
+  bottom: -7rem;
 }
 
 /* SECTION 2 BRANDS */
@@ -144,23 +145,20 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 200px;
   margin-bottom: 200px;
 }
 
 .brand-logos {
-  margin: 3rem;
+  margin: 0;
   filter: grayscale(1);
+  max-width: 120px;
+  width: 20vw;
 }
 
 .brand-logos:hover {
   filter: grayscale(0);
   transition: all 400ms ease;
-}
-
-.microsoft {
-  margin: 2.5rem;
 }
 
 /* SECTION 3 RECENT PROJECTS */
@@ -375,9 +373,10 @@ form {
 
 .mail-line {
   height: 100%;
-  width: 90%;
+  width: 95%;
   border: none;
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
+  text-indent: 60px;
 }
 
 .button-submit {
@@ -462,12 +461,13 @@ form {
   }
 
   /* section 2 brands2 */
+  .brands2 {
+    flex-wrap: wrap;
+  }
   .brand-logos {
     margin: 2.5rem;
   }
-  .microsoft {
-    margin: 2rem;
-  }
+
   .amazon {
     display: none;
   }
@@ -522,6 +522,7 @@ form {
 
   .mail-line {
     height: 4rem;
+    width: 100%;
   }
 
   .button-submit {
@@ -534,7 +535,6 @@ form {
     flex-direction: column;
     height: 300px;
     align-items: center;
-    /* justify-content: center; */
   }
 
   .adress {
@@ -548,4 +548,6 @@ form {
   .adress > p {
     text-align: center;
   }
+
+  /* Test with fucking icon inside the damn input */
 }
