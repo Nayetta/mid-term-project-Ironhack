@@ -176,8 +176,9 @@ h3 {
 .project-card {
   background-color: white;
   box-shadow: 2px 2px 20px rgb(236, 234, 234);
-  height: 450px;
+  height: 410px;
   padding-bottom: 25px;
+  position: relative;
 }
 
 .project-card > img {
@@ -195,6 +196,7 @@ h3 {
 
 .card-text {
   padding-left: 30px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -202,7 +204,9 @@ h3 {
 .link {
   text-decoration: none;
   color: #072ac8;
-  padding-top: 68px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 30px;
 }
 
 /* SECTION 4 CLIENTS */
@@ -216,8 +220,8 @@ h3 {
   height: 650px;
   position: relative;
   background-image: url(/images/orbit_BG.png);
-  background-size: contain;
-  background-position: 0px 0px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-top: 200px;
 }
@@ -255,6 +259,7 @@ h3 {
   margin-bottom: 0px;
   margin-top: 20px;
   text-align: center;
+  width: 55vw;
 }
 
 .clients4 > p {
@@ -307,6 +312,7 @@ h3 {
   height: 350px;
   padding-bottom: 25px;
   padding-top: 40px;
+  position: relative;
 }
 
 .services-card-image img {
@@ -398,9 +404,13 @@ h3 {
 
 /* MEDIA QUERIES MOVILE */
 
-/* test class */
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 767px) { 
+  /* general */
+  h3 {
+    text-align: center;
+  }
+
   h1 {
     font-size: 30px;
     text-align: center;
@@ -483,6 +493,10 @@ h3 {
     flex-direction: column;
     column-gap: 20px;
   }
+
+  /* .services-card p {
+    max-width: 30px;
+  } */
 
   /* SECTION 6 SUSCRIPTION */
 
