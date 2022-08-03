@@ -132,15 +132,16 @@ h3 {
 }
 .float-cards {
   position: absolute;
-  width: 18rem;
+  max-width: 18rem;
+  width: 20vw;
 }
 #card1 {
   top: -1rem;
   left: -4rem;
 }
 #card2 {
-  right: -8rem;
-  bottom: -8rem;
+  right: -7vw;
+  bottom: -7rem;
 }
 
 /* SECTION 2 BRANDS */
@@ -148,23 +149,20 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 200px;
   margin-bottom: 200px;
 }
 
 .brand-logos {
-  margin: 3rem;
+  margin: 0;
   filter: grayscale(1);
+  max-width: 120px;
+  width: 20vw;
 }
 
 .brand-logos:hover {
   filter: grayscale(0);
   transition: all 400ms ease;
-}
-
-.microsoft {
-  margin: 2.5rem;
 }
 
 /* SECTION 3 RECENT PROJECTS */
@@ -329,7 +327,6 @@ h3 {
 
 .form6 {
   background-color: #ffc600;
-  /* margin: auto; */
   margin-top: 200px;
   height: 500px;
 }
@@ -341,6 +338,7 @@ h3 {
   flex-direction: column;
   height: 100%;
 }
+
 .form-inner > h3 {
   margin-top: 0;
 }
@@ -351,31 +349,44 @@ h3 {
 
 .big-form {
   height: 4rem;
-  width: 40rem;
-  /* max-width: ; */
   margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  width: 75%;
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+}
+
+.form-container > span {
+  position: absolute;
 }
 
 .mail-icon {
-  position: relative;
-  left: 3.5rem;
-  top: 0.6rem;
-}
-.mail-line {
-  height: 100%;
-  width: 50%;
-  border: none;
-  padding-left: 4.5rem;
-}
-.form-line {
-  height: 100%;
-  /* width: 100%; */
+  padding-left: 1.5rem;
+  padding-top: 20px;
 }
 
-.boto-contact {
+.mail-line {
+  height: 100%;
+  width: 95%;
+  border: none;
+  /* padding-left: 4rem; */
+  text-indent: 60px;
+}
+
+.button-submit {
   height: 100%;
   width: 20%;
-  border: none;
+  border: #072ac8 solid 1px;
   margin-left: 0;
 }
 
@@ -454,12 +465,13 @@ h3 {
   }
 
   /* section 2 brands2 */
+  .brands2 {
+    flex-wrap: wrap;
+  }
   .brand-logos {
     margin: 2.5rem;
   }
-  .microsoft {
-    margin: 2rem;
-  }
+
   .amazon {
     display: none;
   }
@@ -500,20 +512,26 @@ h3 {
   }
 
   /* SECTION 6 SUSCRIPTION */
-
+  .form6 {
+    height: 500px;
+  }
   .big-form {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    height: 9rem;
-    width: 75vw;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+    height: 150px;
   }
-  .form-line {
-    height: 100%;
-    width: 100%;
-  }
+
   .mail-line {
+    height: 4rem;
     width: 100%;
+  }
+
+  .button-submit {
+    width: 100%;
+    height: 90px;
   }
 
   /* FOOTER */
@@ -521,7 +539,6 @@ h3 {
     flex-direction: column;
     height: 300px;
     align-items: center;
-    /* justify-content: center; */
   }
 
   .adress {
@@ -535,4 +552,6 @@ h3 {
   .adress > p {
     text-align: center;
   }
+
+  /* Test with fucking icon inside the damn input */
 }
