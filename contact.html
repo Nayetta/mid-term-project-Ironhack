@@ -46,68 +46,45 @@
     <section class="mainform small-section">
       <h1>Contact Us</h1>
       <form action="" method="post">
-        <div class="form-container">
+        <div class="form-contact-container">
          <label class="body-intro-reg"
          for="name">Full Name*</label>
          <input 
          type="text" name="name" 
-         placeholder="Enter your name...">
+         placeholder="Enter your name..."
+         class="headline-reg">
         </div>
         <div class="phone-email-container">
-          <div class="form-container">
+          <div class="form-contact-container">
            <label class="body-intro-reg" 
            for="email">Email</label>
             <input type="email" name="email" 
-            placeholder="Enter your email">
+            placeholder="Enter your email"
+            class="headline-reg">
           </div>
-          <div class="form-container">
+          <div class="form-contact-container">
             <label class="body-intro-reg" 
             for="phone">Phone</label>
             <input type="number" name="phone" 
-            placeholder="Enter your phone">
+            placeholder="Enter your phone"
+            class="headline-reg">
           </div>
         </div>
-        <div class="form-container">
+        <div class="form-contact-container">
           <label class="body-intro-reg"
           for="message">Message*</label>
-          <input 
+          <textarea
           type="text" name="message" 
-          placeholder="Write your message here...">
+          placeholder="Write your message here..."
+          rows="6"
+          class="headline-reg long-message"></textarea>
          </div>
         <input 
          type="submit"
-         value="Submit">
-      </form>
-      
-      
-    </section>
-
-    <!-- SUBSCRIPTION FORM -->
-    <section class="form6 large-section">
-      <div class="form-inner">
-        <h3>Do you have any questions?</h3>
-        <p class="body-intro-reg">Let us help you!</p>
-        <!-- FORM  -->
-        <form action="">
-          <div class="big-form">
-            <!-- FORM LINE AND MAIL ICON RELATIVE -->
-            <div class="form-container">
-              <span class="material-symbols-outlined mail-icon"> mail </span>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="mail-line"
-              />
-            </div>
-            <!-- BUTTON  -->
-            <input
-              type="submit"
-              value="Suscribe"
-              class="blue-button button-submit"
-            />
-          </div>
-        </form>
-      </div>
+         value="Submit"
+         class="blue-button button-submit"
+         id="main-form-button">
+      </form>  
     </section>
 
     <!-- FOOTER MENU -->
