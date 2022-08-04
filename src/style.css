@@ -446,6 +446,35 @@ form {
   color: #072ac8;
 }
 
+/* CONTACT PAGE */
+
+.mainform {
+  margin-top: 200px;
+}
+
+.mainform h1 {
+  margin-bottom: 80px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-email-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px
+  ;
+}
+
+/* .mainform input {
+  font-size: 14px;
+  color: #333333;
+} */
+
+
+
 /* MEDIA QUERIES MOVILE */
 
 @media all and (max-width: 767px) {
