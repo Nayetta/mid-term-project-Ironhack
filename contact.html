@@ -45,7 +45,7 @@
     <!-- MAIN FORM -->
     <section class="mainform small-section">
       <h1>Contact Us</h1>
-      <form action="" method="post">
+      <form id="contact-form">
         <div class="form-contact-container">
           <label class="body-intro-reg" for="name">Full Name*</label>
           <input
@@ -53,6 +53,7 @@
             name="name"
             placeholder="Enter your name..."
             class="headline-reg"
+            id="form-name"
           />
         </div>
         <div class="phone-email-container">
@@ -63,6 +64,7 @@
               name="email"
               placeholder="Enter your email"
               class="headline-reg"
+              id="form-email"
             />
           </div>
           <div class="form-contact-container">
@@ -72,6 +74,7 @@
               name="phone"
               placeholder="Enter your phone"
               class="headline-reg"
+              id="form-phone"
             />
           </div>
         </div>
@@ -83,6 +86,7 @@
             placeholder="Write your message here..."
             rows="6"
             class="headline-reg long-message"
+            id="form-message"
           ></textarea>
         </div>
         <input
@@ -113,6 +117,6 @@
         <div><a href="#" class="headline-reg"> Privacy Policy</a></div>
       </div>
     </footer>
-    <script src="./src/script.js"></script>
+    <script src="./src/contact.js"></script>
   </body>
 </html>
