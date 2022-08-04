@@ -396,7 +396,7 @@ h3 {
   width: 100%;
 }
 
-form {
+.form6 form {
   width: 75%;
 }
 
@@ -502,27 +502,29 @@ form {
 .form-contact-container {
   display: flex;
   flex-direction: column;
-  width: 87vw;
   margin-top: 20px;
 }
 
 .phone-email-container {
   display: flex;
   flex-direction: row;
-  column-gap: 13px;
-  width: 87vw;
+  /* column-gap: 13px; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.phone-email-container > div {
+  width: 48%;
 }
 
 .form-contact-container label {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .form-contact-container input {
   background-color: rgba(107, 112, 141, 0.1);
   border: none;
   height: 70px;
-
 }
 
 .form-contact-container textarea {
@@ -536,18 +538,16 @@ form {
   text-indent: 20px;
 }
 
-.long-message{
+.long-message {
   padding: 20px 0px;
 }
 
 #main-form-button {
-  width: 87vw;
+  width: 100%;
   height: 80px;
   margin-top: 25px;
 }
 
-=======
->>>>>>> 1c572130a2f1d32448ca20b67f03f703bb77786b
 /* MEDIA QUERIES MOVILE */
 
 @media all and (max-width: 767px) {
