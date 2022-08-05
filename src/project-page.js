@@ -10,7 +10,7 @@ function fetchArticle() {
                   <p class="body-intro-med gray">${response.userId}</p>
                   <div class="date-container">
                     <p class="body-intro-reg dark">Completed on</p>
-                    <p class="body-intro-reg">${response.id}</p>
+                    <p class="body-intro-reg date-num">${response.id}</p>
                   </div>
                 </div>
                 <div class="image-article"></div>
