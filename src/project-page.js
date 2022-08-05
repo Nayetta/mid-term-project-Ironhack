@@ -43,8 +43,8 @@ function fetchPosts() {
           } project image" />
             </div>
             <div class="card-text">
-              <p class="body-intro-med">${articleObject.title}</p>
-              <p class="headline-reg">${articleObject.body}</p>
+              <p class="body-intro-med lines-length">${articleObject.title}</p>
+              <p class="headline-reg lines-length">${articleObject.body}</p>
               <a class="link headline-reg" href="./project-page.html"
                 >Learn more</a
               >
