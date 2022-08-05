@@ -9,7 +9,7 @@ function fetchArticle() {
                <div class="title-article">
                   <p class="body-intro-med gray">${response.userId}</p>
                   <div class="date-container">
-                    <p class="body-intro-reg dark">Completed on</p>
+                    <p class="body-intro-reg dark ">Completed on</p>
                     <p class="body-intro-reg">${response.id}</p>
                   </div>
                 </div>
@@ -43,8 +43,8 @@ function fetchPosts() {
           } project image" />
             </div>
             <div class="card-text">
-              <p class="body-intro-med">${articleObject.title}</p>
-              <p class="headline-reg">${articleObject.body}</p>
+              <p class="body-intro-med lines-length">${articleObject.title}</p>
+              <p class="headline-reg lines-length">${articleObject.body}</p>
               <a class="link headline-reg" href="./project-page.html"
                 >Learn more</a
               >

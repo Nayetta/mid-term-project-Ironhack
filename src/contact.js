@@ -25,17 +25,21 @@ function addPost(preventForm) {
       console.log(dataForm);
       let content = `
       <div class="result-container">
-       <img src="../images/succes.svg" alt="form sended succesfully" class= "form-result">
-  <p class="body-intro-reg dark">Hey, the form was succesfully sent, Thank you Bro!!!</p><p>
+      <p class="body-intro-reg dark">Hey, the form was succesfully sent, Thank you Bro!!!</p><p>
   Wu Tang Class is the best in IronHack!!!</p>
+       <img src="../images/succes.svg" alt="form sended succesfully" class= "form-result">
+  <a href="./contact.html" class="both-buttons headline-med blue-button"
+            >Go back to the form</a>
   </div>`;
       document.querySelector("#contact-form").innerHTML = content;
     })
     .catch((error) => {
       let content = `
       <div class="result-container">
+      <p class="body-intro-reg dark">Submition Error!!! Try it latter</p>
       <img src="../images/error.svg" alt="error sendingg the form" class= "form-result">
-  <p class="body-intro-reg dark">Submition Error!!! Try it latter</p>
+    <a href="./contact.html" class="both-buttons headline-med blue-button"
+            >Go back to the form</a>
   </div>`;
       document.querySelector("#contact-form").innerHTML = content;
     });

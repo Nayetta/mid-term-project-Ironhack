@@ -360,6 +360,7 @@ h3 {
   background-color: white;
   box-shadow: 2px 2px 20px rgb(236, 234, 234);
   height: 350px;
+  width: 30%;
   padding-bottom: 25px;
   padding-top: 40px;
   position: relative;
@@ -518,7 +519,6 @@ h3 {
   /* column-gap: 13px; */
   width: 100%;
   justify-content: space-between;
-  
 }
 
 .phone-email-container > div {
@@ -563,8 +563,8 @@ h3 {
 }
 
 .form-result {
-  max-height: 55vh;
-  max-width: 75vw;
+  max-height: 40vh;
+  /* max-width: 75vw; */
   margin: auto;
 }
 
@@ -657,6 +657,9 @@ h3 {
     flex-direction: column;
     row-gap: 20px;
   }
+  .project-card {
+    width: 100%;
+  }
 
   /* section 4 CLIENTS */
   .clients4 {
@@ -684,6 +687,10 @@ h3 {
     display: flex;
     flex-direction: column;
     column-gap: 20px;
+  }
+
+  .services-card {
+    width: 100%;
   }
 
   /* SECTION 6 SUSCRIPTION */
@@ -744,5 +751,4 @@ h3 {
   .phone-email-container > div {
     width: 100%;
   }
-
 }
