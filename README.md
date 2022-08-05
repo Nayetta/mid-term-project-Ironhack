@@ -1,6 +1,7 @@
 # Circle Agency
 
 <img src="./images/ajracsdqu5gmyfl6nai0.png" alt="Ironhack logo" width="150px"/>
+
 ## Mid Term Project from Ironhack FrontEnd Bootcamp
 
 This is the first project done in Frontend IronHack Bootcamp after the first two weeks. The assignment was to duplicate a specific website, in this case the website was this one: <a href="https://circle-agency-35d27e.webflow.io/">circle.</a>
