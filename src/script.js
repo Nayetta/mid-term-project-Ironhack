@@ -19,3 +19,9 @@ function toggle() {
 }
 
 hamburger.addEventListener("click", toggle);
+
+window.addEventListener("resize", () => {
+  menu.style.display = "none";
+  cross.style.display = "none";
+  lines.style.display = "block";
+});
