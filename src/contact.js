@@ -24,15 +24,19 @@ function addPost(preventForm) {
     .then((dataForm) => {
       console.log(dataForm);
       let content = `
-  <p class="body-intro-reg dark">Hey, the form was succesfully sent, Thank you Bro!!!
-  Wu Tang Class is the bestin IronHack!!!</p>
-  `;
+      <div class="result-container">
+       <img src="../images/succes.svg" alt="form sended succesfully" class= "form-result">
+  <p class="body-intro-reg dark">Hey, the form was succesfully sent, Thank you Bro!!!</p><p>
+  Wu Tang Class is the best in IronHack!!!</p>
+  </div>`;
       document.querySelector("#contact-form").innerHTML = content;
     })
     .catch((error) => {
       let content = `
+      <div class="result-container">
+      <img src="../images/error.svg" alt="error sendingg the form" class= "form-result">
   <p class="body-intro-reg dark">Submition Error!!! Try it latter</p>
-  `;
+  </div>`;
       document.querySelector("#contact-form").innerHTML = content;
     });
 }
